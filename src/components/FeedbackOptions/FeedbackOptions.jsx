@@ -12,7 +12,7 @@ const FeedbackOptions = ({options, onLeaveFeedback}) => {
         <>
           {Object.keys(options).map(option => (
             <List key={option}>
-              <Button type="button" onClick={() => onLeaveFeedback(option)}>
+              <Button type="button" name={option} onClick={onLeaveFeedback}>
                 {option}
               </Button>
             </List>
